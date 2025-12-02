@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Simple Text Loader</title>
+<title>My Websites</title>
 <style>
     body {
         background: #0d0d0d;
@@ -12,26 +12,49 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        min-height: 100vh;
         margin: 0;
+        padding: 20px;
     }
-    textarea {
-        width: 90%;
+    .container {
         max-width: 600px;
-        height: 400px;
+        width: 100%;
+        text-align: center;
         background: #1a1a1a;
-        color: white;
-        border: none;
-        border-radius: 6px;
-        padding: 10px;
-        font-size: 16px;
-        resize: none;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(255,255,255,0.1);
+    }
+    h1 {
+        margin-bottom: 20px;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    li {
+        margin: 10px 0;
+    }
+    a {
+        color: #00ffff;
+        text-decoration: none;
+        font-size: 18px;
+        word-break: break-word;
+    }
+    a:hover {
+        text-decoration: underline;
     }
 </style>
 </head>
 <body>
 
-<textarea id="textBox" placeholder="my websites: example.com, google.com"></textarea>
+<div class="container">
+    <h1>My Websites</h1>
+    <ul>
+        <li><a href="https://binpaste.netlify.app" target="_blank">binpaste.netlify.app</a></li>
+        <!-- Add more sites here -->
+    </ul>
+</div>
 
 </body>
 </html>
